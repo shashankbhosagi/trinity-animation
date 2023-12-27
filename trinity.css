@@ -1,0 +1,28 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cyan; */
+
+}
+
+#text{
+    height: 50vw;
+    width: 80vw;
+    stroke-dasharray: 3215;
+    animation: 10s fillSvg;
+    /* stroke-dashoffset: 1; */
+}
+
+@keyframes fillSvg{
+    0%{
+        stroke-dashoffset: 3215;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
